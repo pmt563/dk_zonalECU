@@ -53,8 +53,8 @@ COPY ./*.dbc ./candump*.log ./*.json ./
 
 # Debian 12 is bookworm, so the glibc version matches. Distroless is a lot smaller than
 # Debian slim versions
-# For development add :debug like this
-FROM gcr.io/distroless/base-debian12:debug  to get a busybox shell as well
+# For development add :debug like this to get a busybox shell as well
+FROM gcr.io/distroless/base-debian12:debug
 # FROM gcr.io/distroless/base-debian12
 
 WORKDIR /dist
